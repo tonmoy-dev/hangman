@@ -3,11 +3,45 @@ import { KeysContainer, Key } from "./styles/Keyboard.styles"
 function Keyboard() {
     return (
         <KeysContainer>
-            <Key disabled={true}>A</Key>
-            <Key disabled={false}>B</Key>
-            <Key disabled={false}>C</Key>
+            {
+                KEYS.map(key => {
+                    return(
+                        <Key key={key} disabled={false}>{key}</Key>
+                    )
+                })
+            }
         </KeysContainer>
     )
 }
 
 export default Keyboard
+
+const KEYS = [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z",
+  ]
+  

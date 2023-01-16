@@ -1,14 +1,17 @@
 import Hangman from "./Hangman"
 import { DrawingContainer, Hangingbar, Lowerbar, Middlebar, Topbar } from "./styles/Drawing.styles"
 
-function HangmanDrawing() {
+type HangmanDrawingProps ={
+    numberOfGuesses: number;
+}
+function HangmanDrawing({numberOfGuesses}:HangmanDrawingProps) {
     return (
         <DrawingContainer>
             <Topbar />
             <Hangingbar />
             <Middlebar />
             <Lowerbar />
-            <Hangman />
+            <Hangman numberOfGuesses = {numberOfGuesses} />
         </DrawingContainer>
     )
 }

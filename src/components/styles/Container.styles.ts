@@ -1,10 +1,10 @@
 import styled from '@emotion/styled'
 
 export const Container = styled('div')`
-    width: 100%;
-    height: 100vh;
+    padding: 0 50px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
     align-items: center;
     justify-items: center;
 `

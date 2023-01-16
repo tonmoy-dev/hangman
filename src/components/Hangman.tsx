@@ -1,14 +1,17 @@
 import { Body, Head, LeftArm, LeftLeg, RightArm, RightLeg } from "./styles/Hangman.styles"
 
-function Hangman() {
+type HangmanDrawingProps ={
+    numberOfGuesses: number;
+}
+
+const bodyParts = [<Head/>, <Body/>, <RightArm/>, <LeftArm/>, <RightLeg/>, <LeftLeg/>];
+
+function Hangman({numberOfGuesses}:HangmanDrawingProps) {
     return (
         <>
-            <Head />
-            <Body />
-            <LeftArm />
-            <RightArm />
-            <LeftLeg />
-            <RightLeg />
+        { 
+            bodyParts.slice(0, numberOfGuesses)
+        }
         </>
     )
 }

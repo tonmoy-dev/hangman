@@ -2,17 +2,21 @@ import styled from '@emotion/styled'
 
 export const GuessContainer = styled('div')`
     display: grid;
-    gap: 100px;
+    gap: 50px;
     justify-items: center;
+    width: 100%;
 `
 
 export const WordWrapper = styled('div')`
     display: flex;
-    gap: 10px;
+    gap: 16px;
+    align-items: center;
 `
-export const Letter =  styled('span')`
-    font-size: 4rem;
+export const Letter =  styled('div')`
+    width: 36px;
+    border-bottom: 5px solid black;
+    font-size: 3rem;
     text-transform: uppercase;
-    border-bottom: 6px solid black;
     line-height: 1;
+    text-align:center;
 `
